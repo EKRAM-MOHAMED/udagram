@@ -39,7 +39,7 @@ import {Router, Response, Request} from 'express';
         });
       });
     } else {
-      res.status(404).send("The image_url is wrong, please send another one");
+      res.status(400).send("The image_url is wrong, please send another one");
     }
   });
 
